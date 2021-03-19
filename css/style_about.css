@@ -1,0 +1,241 @@
+html{
+    scroll-behavior: smooth;
+}
+
+html body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.skip a{
+    background: white;
+    left: 10px;
+    padding: 10px;
+    position: absolute;
+    top: -60px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1000;
+}
+
+.skip a:focus{
+    top:20px;
+    color: black;
+    text-decoration-style: solid;
+}
+
+
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    background-color: #B53833;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 10;
+}
+
+header img {
+    max-width: 10%;
+    transform: scale(0.8);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav_links {
+    display:flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+nav a {
+    display:flex;
+    height: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: center;
+    align-items: center;
+    font-family: Forum, sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav a:hover {
+    background-color: rgba(160, 56, 51, 0.9);
+}
+
+.nav_active {
+    background-color: rgba(229, 229, 229, 0.5);
+    color: #000000;
+}
+
+
+#main {
+    position: relative;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+
+.header_about {
+    display:flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%
+}
+
+.h1_about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    background-color: #B53833;
+    font-family: Forum, sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    margin: 5px 0 0 5px;
+}
+
+.about_container {
+    width: 100%;
+    margin: 0;
+}
+
+.h2_about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 150px;
+    font-family: Forum, sans-serif;
+    font-size: 36px;
+}
+
+.h2_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(229, 229, 229, 0.5);
+    text-align: center;
+}
+
+.h2_container_other {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100px;
+    background-color: rgba(229, 229, 229, 0.5);
+    text-align: center;
+}
+
+.body_text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 280px;
+    font-family: Roboto, sans-serif;
+    font-size: 11px;
+    line-height: 1.8;
+    letter-spacing: 0.3px;
+    text-align: justify;
+}
+
+.text_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 180px;
+    background-color: #ffffff;
+}
+
+.bgmusic {
+    transform: scale(0.5);
+    margin-right: 0px;
+}
+
+
+.parallax1 {
+    background: url("../imgs/img8.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.parallax2 {
+    background: url("../imgs/img9.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.parallax3 {
+    background: url("../imgs/img10.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.parallax4 {
+    background: url("../imgs/img11.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.parallax5 {
+    background: url("../imgs/img12.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 20px;
+    background-color: #F3F3F3;
+    font-family: Forum, sans-serif;
+    font-size: 9px;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    bottom: 0px;
+    z-index: 1;
+}
+

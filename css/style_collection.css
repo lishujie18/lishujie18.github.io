@@ -1,0 +1,211 @@
+html{
+    scroll-behavior: smooth;
+}
+
+html body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.skip a{
+    background: white;
+    left: 10px;
+    padding: 10px;
+    position: absolute;
+    top: -60px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1000;
+}
+
+.skip a:focus{
+    top:20px;
+    color: black;
+    text-decoration-style: solid;
+}
+
+
+header {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    background-color: #B53833;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 100;
+}
+
+header img {
+    max-width: 10%;
+    transform: scale(0.8);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.nav_links {
+    display:flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+nav a {
+    display:flex;
+    height: 80px;
+    padding-left: 15px;
+    padding-right: 15px;
+    justify-content: center;
+    align-items: center;
+    font-family: Forum, sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+nav a:hover {
+    background-color: rgba(160, 56, 51, 0.9);
+}
+
+.nav_active {
+    background-color: rgba(229, 229, 229, 0.5);
+    color: #000000;
+}
+
+#main {
+    position: relative;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.h1_collection {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    background-color: #B53833;
+    font-family: Forum, sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    margin: 5px 0 0 5px;
+}
+
+.main_container {
+    display: grid;
+    position: absolute;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    width: 100%;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(9, 300px);
+    grid-row-gap: 30px;
+    justify-content: center;
+    align-content: center;
+    overflow-y: scroll;
+}
+
+.collection_h2 {
+    width: 260px;
+    margin-bottom: 5px;;
+}
+
+.collection_h2 p{
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: #F07E3D;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+.flip-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 260px;
+    height: 260px;
+    background-color: rgba(229, 229, 229, 0.5);
+    border: 2px solid rgba(181, 56, 51, 0.5);
+    perspective: 1000px;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+.collection_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flip-card-back {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(160, 56, 51, 0.9);
+    color: #ffffff;
+    transform: rotateY(180deg);
+}
+
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+h3 {
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-weight: bolder;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+.flip-card-back p {
+    font-family: Roboto, sans-serif;
+    font-size: 11px;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+
+footer {
+    display: flex;
+    width: 100%;
+    height: 20px;
+    background-color: #F3F3F3;
+    font-family: Forum, sans-serif;
+    font-size: 9px;
+    justify-content: center;
+    align-items: center;
+    position:fixed;
+    bottom: 0px;
+    z-index: 1;
+}
