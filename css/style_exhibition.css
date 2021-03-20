@@ -139,7 +139,7 @@ nav a:hover {
     color: #DF5C11;
     border-bottom: 2px solid #B53833;
     line-height: 1.5;
-    letter-spacing: 0.3px;
+    /* letter-spacing: 0.3px; */
     margin-bottom: 0;
 }
 
