@@ -61,12 +61,12 @@ header img {
 nav a {
     display:flex;
     height: 80px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     justify-content: center;
     align-items: center;
     font-family: Forum, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     text-decoration: none;
     color: #ffffff;
 }
@@ -96,6 +96,10 @@ nav a:hover {
     width: 100%
 }
 
+.bgmusic {
+    transform: scale(0.6);
+}
+
 .h1_about {
     display: flex;
     justify-content: center;
@@ -118,9 +122,11 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     max-width: 150px;
     font-family: Forum, sans-serif;
-    font-size: 36px;
+    font-size: 32px;
+    font-weight: 300;
 }
 
 .h2_container {
@@ -147,10 +153,10 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 280px;
+    max-width: 80%;
     font-family: Roboto, sans-serif;
-    font-size: 11px;
-    line-height: 1.8;
+    font-size: 12px;
+    line-height: 1.5;
     letter-spacing: 0.3px;
     text-align: justify;
 }
@@ -160,21 +166,15 @@ nav a:hover {
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 180px;
+    height: 200px;
     background-color: #ffffff;
 }
-
-.bgmusic {
-    transform: scale(0.5);
-    margin-right: 0px;
-}
-
 
 .parallax1 {
     background: url("../imgs/img8.jpg") no-repeat center;
     background-size: cover;
-    background-attachment: fixed;
-    height: 600px;
+    /* background-attachment: fixed; */
+    height: 650px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,8 +184,8 @@ nav a:hover {
 .parallax2 {
     background: url("../imgs/img9.jpg") no-repeat center;
     background-size: cover;
-    background-attachment: fixed;
-    height: 600px;
+    /* background-attachment: fixed; */
+    height: 650px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -195,8 +195,8 @@ nav a:hover {
 .parallax3 {
     background: url("../imgs/img10.jpg") no-repeat center;
     background-size: cover;
-    background-attachment: fixed;
-    height: 600px;
+    /* background-attachment: fixed; */
+    height: 650px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -206,8 +206,8 @@ nav a:hover {
 .parallax4 {
     background: url("../imgs/img11.jpg") no-repeat center;
     background-size: cover;
-    background-attachment: fixed;
-    height: 600px;
+    /* background-attachment: fixed; */
+    height: 650px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -217,8 +217,8 @@ nav a:hover {
 .parallax5 {
     background: url("../imgs/img12.jpg") no-repeat center;
     background-size: cover;
-    background-attachment: fixed;
-    height: 600px;
+    /* background-attachment: fixed; */
+    height: 650px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -231,7 +231,7 @@ footer {
     height: 20px;
     background-color: #F3F3F3;
     font-family: Forum, sans-serif;
-    font-size: 9px;
+    font-size: 10px;
     justify-content: center;
     align-items: center;
     position:fixed;

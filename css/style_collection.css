@@ -61,12 +61,12 @@ header img {
 nav a {
     display:flex;
     height: 80px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     justify-content: center;
     align-items: center;
     font-family: Forum, sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     text-decoration: none;
     color: #ffffff;
 }
@@ -108,15 +108,24 @@ nav a:hover {
     margin-bottom: 20px;
     width: 100%;
     grid-template-columns: auto;
-    grid-template-rows: repeat(9, 300px);
+    grid-template-rows: repeat(9, auto);
     grid-row-gap: 30px;
     justify-content: center;
     align-content: center;
     overflow-y: scroll;
 }
 
+collection_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+}
+
 .collection_h2 {
-    width: 260px;
+    width: 280px;
     margin-bottom: 5px;;
 }
 
@@ -134,8 +143,8 @@ nav a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 260px;
-    height: 260px;
+    width: 280px;
+    height: 280px;
     background-color: rgba(229, 229, 229, 0.5);
     border: 2px solid rgba(181, 56, 51, 0.5);
     perspective: 1000px;
@@ -143,8 +152,8 @@ nav a:hover {
 
 .flip-card-inner {
     position: relative;
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     text-align: center;
     transition: transform 0.6s;
