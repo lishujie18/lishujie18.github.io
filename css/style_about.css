@@ -180,7 +180,17 @@ nav a:hover {
     align-items: center;
     width: 100%;
 }
-
+.parallax1:before {
+   content : ' ' ;
+   position : fixed ;
+   z-index : -1 ;
+   top : 0 ;
+   right : 0 ;
+   bottom : 0 ;
+   left : 0 ;
+   background: url("../imgs/img8.jpg") no-repeat center;
+   background-size : cover;
+}
 .parallax2 {
     background: url("../imgs/img9.jpg") no-repeat center;
     background-size: cover;
@@ -191,7 +201,17 @@ nav a:hover {
     align-items: center;
     width: 100%;
 }
-
+.parallax2:before {
+   content : ' ' ;
+   position : fixed ;
+   z-index : -1 ;
+   top : 0 ;
+   right : 0 ;
+   bottom : 0 ;
+   left : 0 ;
+   background: url("../imgs/img9.jpg") no-repeat center;
+   background-size : cover;
+}
 .parallax3 {
     background: url("../imgs/img10.jpg") no-repeat center;
     background-size: cover;
@@ -202,7 +222,17 @@ nav a:hover {
     align-items: center;
     width: 100%;
 }
-
+.parallax3:before {
+   content : ' ' ;
+   position : fixed ;
+   z-index : -1 ;
+   top : 0 ;
+   right : 0 ;
+   bottom : 0 ;
+   left : 0 ;
+   background: url("../imgs/img10.jpg") no-repeat center;
+   background-size : cover;
+}
 .parallax4 {
     background: url("../imgs/img11.jpg") no-repeat center;
     background-size: cover;
@@ -213,7 +243,17 @@ nav a:hover {
     align-items: center;
     width: 100%;
 }
-
+.parallax4:before {
+   content : ' ' ;
+   position : fixed ;
+   z-index : -1 ;
+   top : 0 ;
+   right : 0 ;
+   bottom : 0 ;
+   left : 0 ;
+   background: url("../imgs/img11.jpg") no-repeat center;
+   background-size : cover;
+}
 .parallax5 {
     background: url("../imgs/img12.jpg") no-repeat center;
     background-size: cover;
