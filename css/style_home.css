@@ -87,16 +87,6 @@ main {
     font-size: 8px;
 }
 
-.header_home {
-    background-image: url("../imgs/img1.jpg");
-    height: 200px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display:flex;
-    flex-direction: column;
-}
-
 .h1 {
     display: flex;
     justify-content: center;
@@ -109,6 +99,38 @@ main {
     color: #ffffff;
     margin: 5px 0 0 5px;
 }
+
+.header_home {
+    background-image: url("../imgs/img1.jpg");
+    height: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display:flex;
+    flex-direction: column;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
+    -webkit-animation: myfirst 5s ; /* Chrome, Safari, Opera */
+    animation: myfirst 5s ;
+    animation-iteration-count: 1;
+
+}
+
+
+@-webkit-keyframes myfirst {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+  /* Standard syntax */
+  @keyframes myfirst {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
 
 .main_hearder {
     align-self: center;
@@ -245,17 +267,18 @@ main {
 }
 
 footer {
-    display: flex;
+    /* display: flex; */
     width: 100%;
-    height: 20px;
+    /* height: 20px; */
     background-color: #F3F3F3;
     font-family: Forum, sans-serif;
     font-size: 9px;
     text-align: center;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center; */
     position:fixed;
     bottom: 0px;
     z-index: 1;
+    padding: 5px;
 }
 
