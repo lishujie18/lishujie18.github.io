@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="imgs/logo.png">
+    <link rel="stylesheet" href="uicons-regular-rounded/css/uicons-regular-rounded.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Forum">
 	<link rel="stylesheet" href="css/html5reset.css">
@@ -11,17 +12,20 @@
 	<title>Home</title>
 </head>
 <body>
-    <div class = "skip"><a href="#main">Skip to Main Content</a></div>
-	<header>
-        <img src="imgs/logo_horizon.png" alt="logo">
-		<nav>
-			<ul class = "nav_links">
-				<li><a href = "index.html" class = "nav_active">HOME</a></li>
-				<li><a href = "about.html">ABOUT</a></li>
-				<li><a href = "exhibition.html">EXHIBITION</a></li>
-				<li><a href = "collection.html">COLLECTION</a></li>
-			</ul>
-		</nav>
+    <div class = "skip"><a href = "#main">Skip to Main Content</a></div>
+	<header id = "top_nav">
+        <a href = "index.html">
+            <img src="imgs/palace_museum_logo.png" alt="logo">
+        </a>
+        <nev id = "nav_links">
+            <a href = "index.html" id = "nav_active">HOME</a>
+            <a href = "about.html">ABOUT</a>
+            <a href = "exhibition.html">EXHIBITION</a>
+            <a href = "collection.html">COLLECTION</a>
+        </nev>
+        <a href="javascript:void(0);" id = 'nav_icon'>
+            <i class="fi-rr-menu-burger"></i>
+        </a>
 	</header>
 
     <main id = "main">
@@ -102,10 +106,17 @@
 
         </div>
 
+        <br>
+        <br>
+        <br>
+        <br>
+
 	</main>
 
 	<footer>
 		<p>&copy ️2001-2021 The Palace Museum, &copy ️Shujie Li</p>
 	</footer>
+
+    <script type="text/javascript" src="js/page.js"></script>
 </body>
 </html>
