@@ -340,31 +340,18 @@ footer {
     }
     
     .body_text2 {
-        display: unset;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 70%;
+        font-family: Roboto, sans-serif;
+        font-size: 16px;
+        line-height: 2;
+        letter-spacing: 0.8px;
+        text-align: justify;
     }
     
-    .parallax1 {
-        background-attachment: fixed;
-        height: 900px;
-    }
-    
-    .parallax2 {
-        background-attachment: fixed;
-        height: 900px;
-    }
-    
-    .parallax3 {
-        background-attachment: fixed;
-        height: 900px;
-    }
-    
-    .parallax4 {
-        background-attachment: fixed;
-        height: 900px;
-    }
-    
-    .parallax5 {
-        background-attachment: fixed;
+    .parallax1, .parallax2, .parallax3, .parallax4, .parallax5 {
         height: 900px;
     }
     
@@ -372,5 +359,192 @@ footer {
         width: 100%;
         font-size: 12px;
         padding: 15px;
+    }
+}
+
+@media screen and (min-width: 1200px){
+
+    #nav_links {
+        display:flex;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    #nav_links a {
+        padding-left: 60px;
+        padding-right: 60px;
+        font-size: 24px;
+    } 
+
+    #main {
+        font-size: 20px;
+    }
+
+    .h1_about {
+        width: 200px;
+        height: 60px;
+        font-size: 24px;
+        letter-spacing: 5px;
+        margin-top: 20px;
+    }
+
+    .bgmusic {
+        transform: scale(1);
+        margin: 10px;
+    }
+
+    .h2_about {
+        max-width: 300px;
+        font-size: 52px;
+        font-weight: 500;
+    }
+    
+    .h2_container {
+        width: 400px;
+        height: 300px;
+    }
+    
+    .text_container {
+        flex-direction: column;
+        height: 350px;
+    }
+
+    .body_text {
+        max-width: 60%;
+        font-size: 20px;
+        line-height: 2;
+        letter-spacing: 1px;
+    }
+    
+    .body_text2 {
+        max-width: 60%;
+        font-size: 20px;
+        line-height: 2;
+        letter-spacing: 1px;
+    }
+    
+    .parallax1 {
+        background: url("../imgs/img35.jpg") no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 900px;
+        width: 100%;
+    }
+    
+    .parallax2 {
+        background: url("../imgs/img36.jpg") no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 900px;
+        width: 100%;
+    }
+    
+    .parallax3 {
+        background: url("../imgs/img37.jpg") no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 900px;
+        width: 100%;
+    }
+    
+    .parallax4 {
+        background: url("../imgs/img38.jpg") no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 900px;
+        width: 100%;
+    }
+    
+    .parallax5 {
+        background: url("../imgs/img39.jpg") no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 900px;
+        width: 100%;
+    }
+    
+    footer {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 1600px){
+
+    #main {
+        font-size: 24px;
+    }
+
+    .h2_about {
+        max-width: 350px;
+        font-size: 60px;
+        font-weight: 500;
+    }
+    
+    .h2_container {
+        width: 400px;
+        height: 400px;
+    }
+    
+    .text_container {
+        height: 400px;
+    }
+
+    .body_text {
+        max-width: 60%;
+        font-size: 24px;
+        line-height: 2;
+        letter-spacing: 1px;
+    }
+    
+    .body_text2 {
+        max-width: 60%;
+        font-size: 24px;
+        line-height: 2;
+        letter-spacing: 1px;
+    }
+    
+    .parallax1 {
+        background: url("../imgs/img35.jpg") no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 900px;
+        width: 100%;
+    }
+    
+    .parallax2 {
+        background: url("../imgs/img36.jpg") no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 900px;
+        width: 100%;
+    }
+    
+    .parallax3 {
+        background: url("../imgs/img37.jpg") no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 900px;
+        width: 100%;
+    }
+    
+    .parallax4 {
+        background: url("../imgs/img38.jpg") no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 900px;
+        width: 100%;
+    }
+    
+    .parallax5 {
+        background: url("../imgs/img39.jpg") no-repeat center;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 900px;
+        width: 100%;
+    }
+    
+    footer {
+        font-size: 16px;
     }
 }

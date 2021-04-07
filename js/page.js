@@ -7,3 +7,5 @@ document.querySelector("#nav_icon").addEventListener("click", function() {
         x.style.display = "block";
     }
 });
+
+document.body.addEventListener('touchstart',function(){});
