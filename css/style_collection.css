@@ -182,8 +182,17 @@ a#nav_active {
 }
 
 
-.flip-card:hover .flip-card-inner {
+.flip-card:hover .flip-card-inner, .flip-card:focus .flip-card-inner{
     transform: rotateY(180deg);
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+
+    .flip-card-inner, .flip-card:hover .flip-card-inner, .flip-card:focus .flip-card-inner{
+        transition: none;
+        transform: none;
+    }
+
 }
 
 h3 {
